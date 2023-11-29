@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/listar.css">
+
+<br><br>
+<h1>Lista dos produtos cadastrados</h1>
+<br>
+<table>
+    <thead>
+        <th>ID do Produto</th>
+        <th>Nome do Produto</th>
+        <th>Código do Produto</th>
+        <th>Quantidade em estoque</th>
+        <th>Cor do Produto</th>
+        <th>Tamanho do Produto</th>
+        <th>Preço do Produto</th>
+    </thead>
+    <tbody>
+        {{#each valores}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.nome_produto}}</td>
+            <td>{{this.cod_produto}}</td>
+            <td>{{this.qtde_estoque}}</td>
+            <td>{{this.cor}}</td>
+            <td>{{this.tamanho}}</td>
+            <td>{{this.preco}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

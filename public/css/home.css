@@ -1,0 +1,72 @@
+img.logo{
+    height: 10vh;
+}
+img.carrinho{
+    height: 10vh;
+}
+img.carrinho_cheio{
+    height: 10vh;
+}
+img.cam_inic{
+    height: 15vh;
+}
+img.cam_prof{
+    height: 15vh;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .produto {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .produto li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .cam_inic,
+  .cam_prof {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .preco {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .adicionar_ao_carrinho {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .adicionar_ao_carrinho:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilos opcionais para o ícone de carrinho, ajuste conforme necessário */
+  #carrinho_icon {
+    width: 30px;
+    height: 30px;
+  }

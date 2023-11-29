@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/header_footer.css">
+    <script src="/js/carrinho.js" defer></script>
+    <script src="/js/itens_carrinhos.js" defer></script>
+    <title>Inicio</title>
+</head>
+<body>
+    {{#if adm}}
+    <header class="cabecalho">
+        <img src="/img/logo.png" alt="logo" class="logo">
+        <nav>
+            <a href="/sistema">Administrador</a>
+            <a href="/">Câmeras</a>
+            <a href="/login">Login</a>
+            <a href="/logout">Sair  </a>
+            <a href="/carrinho">Carrinho</a>
+
+            <a>Usuário: {{tipoUsuario}}</a>
+        </nav>
+        <a href="/carrinho"><img src="/img/carrinho.png" alt="logo" class="carrinho" id="carrinho-icon"></a>
+        
+    </header>
+    <hr>
+    {{else}}
+    <header class="cabecalho">
+        <img src="/img/logo.png" alt="logo" class="logo">
+        <nav>
+            <a href="/">Câmeras</a>
+            <a href="/login">Login</a>
+            <a href="/carrinho">Carrinho</a>
+        </nav>
+        <img src="/img/carrinho.png" alt="logo" class="carrinho" id="carrinho-icon">
+    </header>
+    <hr>
+    {{/if}} 
+    <main>
+
+    </main>
+    <footer>
+
+    {{{body}}}
+    </footer>
+</body>
+</html>

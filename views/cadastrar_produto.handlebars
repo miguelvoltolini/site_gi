@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/css/cadastrar.css">
+
+
+<form action="/cadastrar_produto" method="post">
+<h1>Cadastrar Produto</h1>
+<br>
+
+<label for="nome_produto">Digite o nome do produto:</label>
+<input type="text" name="nome_produto" placeholder="Digite o nome do produto"><br>
+<br>
+<label for="cod_produto">Digite o código do produto:</label>
+<input type="text" name="cod_produto" placeholder="Digite o código do produto"><br>
+<br>
+<label for="qtde_estoque">Digite a quantidade do produto em estoque:</label>
+<input type="text" name="qtde_estoque" placeholder="Digite a quantidade do produto"><br>
+<br>
+<label for="cor">Digite a cor do produto em estoque:</label>
+<input type="text" name="cor" placeholder="Digite a cor do produto"><br>
+<br>
+<label for="tamanho">Digite o tamanho do produto em estoque:</label>
+<input type="text" name="tamanho" placeholder="Digite o tamanho do produto"><br>
+<br>
+<label for="preco">Digite o preco do produto em estoque:</label>
+<input type="text" name="preco" placeholder="Digite o preco do produto"><br>
+<br>
+<button type="submit">Cadastrar</button>
+{{#if msg}}
+    <p>{{msg}}</p>
+{{/if}}
+</form>

@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/apagar.css">
+
+<h1>Apagar Produto</h1>
+
+    <form action="/apagar_produto" method="post">
+        <div class="config-container">
+                <h3>Informações do Produto</h3>
+                <br>
+                {{!-- <label for="nome_produto">Insira o nome do Produto que você deseja atualizar</label> --}}
+                <input type="text" name="nome_produto" placeholder="Insira o nome do Produto que você deseja apagar"><br>
+                {{!-- <label for="cod_produto">Insira o código do Produto que você deseja atualizar</label> --}}
+                <input type="text" name="cod_produto" placeholder="Insira o código do Produto que você deseja apagar"><br>
+                {{!-- <label for="qtde_estoque">Insira a quantidade em estoque do Produto que você deseja atualizar</label> --}}
+                <input type="text" name="qtde_estoque" placeholder="Insira a quantidade em estoque do Produto que você deseja apagar"><br>
+                {{!-- <label for="cor">Insira a cor do Produto que você deseja atualizar</label> --}}
+                <input type="text" name="cor" placeholder="Insira a cor do Produto que você deseja apagar"><br>
+                {{!-- <label for="tamanho">Insira o tamanho do Produto que você deseja atualizar</label> --}}
+                <input type="text" name="tamanho" placeholder="Insira o tamanho do Produto que você deseja apagar"><br>
+                {{!-- <label for="preco">Insira o preço do Produto que você deseja atualizar</label> --}}
+                <input type="text" name="preco" placeholder="Insira o preço do Produto que você deseja apagar"><br>
+        </div>
+        {{#if msg}}
+            <p>{{msg}}</p>
+        {{else}}
+            <p>{{msg2}}</p>
+        {{/if}}
+
+        <button id="apg" type="submit">Apagar</button>
+    </form>

@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="/css/login.css">
+
+{{#if log}}
+    {{#if adm}}
+        <main>
+        <h1>Bem vindo, {{nomeAdm}}</h1>
+    </main>
+    {{else}}
+    <main>
+        <h2>Informações da conta:</h2>
+        <div class="lista_cliente">
+            {{#if valores}}
+            <label for="nome">Nome:</label><p>{{valores.nome}} {{valores.sobrenome}}</p><br>
+            <label for="cpf">Cpf:</label><p>{{valores.cpf}}</p><br>
+            <label for="telefone">Telefone:</label><p>{{valores.telefone}}</p><br>
+            <label for="email">E-mail:</label><p>{{valores.email}}</p><br>
+            {{/if}}
+        </div>
+
+    
+     <div class="sistemaaa_nav">
+            <nav>
+                <a href="/logout">Sair da conta</a>
+            </nav>
+        </div>
+    </main>
+    {{/if}}
+{{else}}
+    <main>
+        <h1>Efetuar Login</h1>
+
+        <form action="/login" method="post">
+        <input type="email" name="email" placeholder="Digite seu email"><br>
+        <input type="password" name="senha" placeholder="Digite sua senha"><br>
+        <br>
+        <button class="log" type="submit">Entrar</button>
+        {{#if msg}}
+        <br><br>
+            <p>{{msg}}</p>
+        {{else}}
+            <p>{{msg2}}</p>
+        {{/if}}
+        </form>
+    </main>
+    <main>
+        <h1>Ainda não está cadastrado? Cadastre-se:</h1>
+        <div class="sistema_nav">
+            <nav>
+                <a href="/cadastrar_usuario">Cadastre-se</a>
+            </nav>
+        </div>
+    </main>
+{{/if}}
+
+
